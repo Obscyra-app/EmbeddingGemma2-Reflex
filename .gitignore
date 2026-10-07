@@ -1,0 +1,10 @@
+.venv/
+weights/
+.build/
+build/
+__pycache__/
+*.pyc
+.DS_Store
+*.safetensors
+*.npz
+.env

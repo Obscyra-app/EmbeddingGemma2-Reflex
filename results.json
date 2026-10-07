@@ -1,0 +1,251 @@
+{
+  "version": "v0.1.0",
+  "base_model": "google/embeddinggemma-2",
+  "text_only": true,
+  "encoder_parameters": 271002624,
+  "head_parameters": 238017,
+  "test_scope": "Synthetic English choice tasks, repeated templates; no general reasoning benchmark.",
+  "training": {
+    "train_rows": 5947,
+    "dev_rows": 603,
+    "calibration_rows": 308,
+    "test_rows": 1552,
+    "epochs": 4,
+    "encoder_lr": 2e-05,
+    "head_lr": 0.0008,
+    "micro_batch": 4,
+    "accumulation": 8,
+    "loss": "softCE + 0.1 Brier + 4 semantic KL to original",
+    "hardware": "1x RTX A5000 24GB",
+    "full_training_minutes_per_seed": [
+      24.2,
+      24.06
+    ]
+  },
+  "selection": {
+    "17": {
+      "selection": "dev only, before final test",
+      "epoch": 1,
+      "training_checkpoint_sha256": "d51aa5db04995b1ff1cf1bdfd8f8108e2151245681e1f0f208de4da197b72c07",
+      "head_source_sha256": "45cc02ceef8a2387ad2940e6c9a863c6e7479a1cc4429c0fbb620c3e16bdd843"
+    },
+    "41": {
+      "selection": "dev only, before final test",
+      "epoch": 4,
+      "training_checkpoint_sha256": "3559ca2f95ba18522b9cb1cd1ed56b1db32ddff0f85ef8d3257884e8136727d9",
+      "head_source_sha256": "903add0e41c598db85633c3573dd2453a3b24eea32f2db479cb7fc799816b972"
+    }
+  },
+  "mac_q8": {
+    "frozen-s17": {
+      "accuracy": 0.5844072164948454,
+      "groups": {
+        "novel-combinations": 0.5078125,
+        "semantic-ui": 1.0,
+        "novel-values": 0.4947916666666667,
+        "both-novel": 0.4921875,
+        "semantic-topic": 0.9652777777777778,
+        "known": 0.5052083333333334
+      },
+      "transfer": 0.4982638888888889,
+      "permutation_flips": 0,
+      "permutation_checks": 40,
+      "p50_ms": 50.51066697342321,
+      "engine": "compiled-exact"
+    },
+    "frozen-s41": {
+      "accuracy": 0.5960051546391752,
+      "groups": {
+        "novel-combinations": 0.52734375,
+        "semantic-ui": 1.0,
+        "novel-values": 0.5078125,
+        "both-novel": 0.515625,
+        "semantic-topic": 0.9722222222222222,
+        "known": 0.5078125
+      },
+      "transfer": 0.5169270833333334,
+      "permutation_flips": 0,
+      "permutation_checks": 40,
+      "p50_ms": 44.35204149922356,
+      "engine": "compiled-exact"
+    },
+    "full-s17": {
+      "accuracy": 0.9536082474226805,
+      "groups": {
+        "novel-combinations": 0.94921875,
+        "semantic-ui": 0.9609375,
+        "novel-values": 0.9270833333333334,
+        "both-novel": 0.953125,
+        "semantic-topic": 1.0,
+        "known": 0.9635416666666666
+      },
+      "transfer": 0.9431423611111112,
+      "permutation_flips": 0,
+      "permutation_checks": 40,
+      "p50_ms": 45.07935349829495,
+      "engine": "compiled-exact"
+    },
+    "full-s41": {
+      "accuracy": 0.8865979381443299,
+      "groups": {
+        "novel-combinations": 0.8515625,
+        "semantic-ui": 0.9609375,
+        "novel-values": 0.8411458333333334,
+        "both-novel": 0.88671875,
+        "semantic-topic": 1.0,
+        "known": 0.8880208333333334
+      },
+      "transfer": 0.8598090277777778,
+      "permutation_flips": 0,
+      "permutation_checks": 40,
+      "p50_ms": 49.4872085400857,
+      "engine": "compiled-exact"
+    },
+    "raw": {
+      "accuracy": 0.5618556701030928,
+      "groups": {
+        "novel-combinations": 0.48828125,
+        "semantic-ui": 0.9921875,
+        "novel-values": 0.4661458333333333,
+        "both-novel": 0.4453125,
+        "semantic-topic": 0.9583333333333334,
+        "known": 0.4921875
+      },
+      "transfer": 0.4665798611111111,
+      "permutation_flips": 0,
+      "permutation_checks": 40,
+      "p50_ms": 42.777979047968984,
+      "engine": "compiled-exact"
+    },
+    "v3b": {
+      "accuracy": 0.6314432989690721,
+      "groups": {
+        "novel-combinations": 0.62890625,
+        "semantic-ui": 1.0,
+        "novel-values": 0.53125,
+        "both-novel": 0.53515625,
+        "semantic-topic": 0.9652777777777778,
+        "known": 0.5494791666666666
+      },
+      "transfer": 0.5651041666666666,
+      "permutation_flips": 0,
+      "permutation_checks": 40,
+      "p50_ms": 37.343666539527476,
+      "engine": "compiled-exact"
+    },
+    "v4": {
+      "accuracy": 0.6759020618556701,
+      "groups": {
+        "novel-combinations": 0.6328125,
+        "semantic-ui": 0.8984375,
+        "novel-values": 0.5885416666666666,
+        "both-novel": 0.59375,
+        "semantic-topic": 0.9791666666666666,
+        "known": 0.6588541666666666
+      },
+      "transfer": 0.6050347222222222,
+      "permutation_flips": 0,
+      "permutation_checks": 40,
+      "p50_ms": 40.16825003782287,
+      "engine": "compiled-exact"
+    }
+  },
+  "legacy_retention": {
+    "full-s17": {
+      "correct": 127,
+      "total": 127
+    },
+    "full-s41": {
+      "correct": 127,
+      "total": 127
+    }
+  },
+  "promotion_pass": false,
+  "deployment_drift": {
+    "full-s17": {
+      "gpu_vs_mac_argmax_differences": 7,
+      "mac_minus_gpu_accuracy_pp": -0.12886597938144284
+    },
+    "frozen-s17": {
+      "gpu_vs_mac_argmax_differences": 14,
+      "mac_minus_gpu_accuracy_pp": -0.45103092783504994
+    },
+    "full-s41": {
+      "gpu_vs_mac_argmax_differences": 8,
+      "mac_minus_gpu_accuracy_pp": 0.3221649484536071
+    },
+    "frozen-s41": {
+      "gpu_vs_mac_argmax_differences": 16,
+      "mac_minus_gpu_accuracy_pp": 0.06443298969072142
+    }
+  },
+  "latency": {
+    "primary": {
+      "final-benchmark-full17-1": {
+        "backend": "full-s17",
+        "p50_ms": 46.48110398557037,
+        "p95_ms": 72.29591874056494
+      },
+      "final-benchmark-full17-2": {
+        "backend": "full-s17",
+        "p50_ms": 43.6227495665662,
+        "p95_ms": 86.27568950760178
+      },
+      "final-benchmark-full41-1": {
+        "backend": "full-s41",
+        "p50_ms": 48.2802705373615,
+        "p95_ms": 123.47531045088536
+      },
+      "final-benchmark-full41-2": {
+        "backend": "full-s41",
+        "p50_ms": 34.353708499111235,
+        "p95_ms": 107.30082731461111
+      },
+      "final-benchmark-laya-1": {
+        "backend": "laya",
+        "p50_ms": 70.8559374907054,
+        "p95_ms": 133.85228121769606
+      },
+      "final-benchmark-laya-2": {
+        "backend": "laya",
+        "p50_ms": 31.476062489673495,
+        "p95_ms": 203.97577230469315
+      }
+    },
+    "diagnostic": {
+      "diagnostic-benchmark-full17-1": {
+        "backend": "full-s17",
+        "p50_ms": 19.60449997568503,
+        "p95_ms": 33.728337450884275
+      },
+      "diagnostic-benchmark-full17-2": {
+        "backend": "full-s17",
+        "p50_ms": 18.798208562657237,
+        "p95_ms": 28.57261243043467
+      },
+      "diagnostic-benchmark-full41-1": {
+        "backend": "full-s41",
+        "p50_ms": 18.136270460672677,
+        "p95_ms": 29.859693784965202
+      },
+      "diagnostic-benchmark-full41-2": {
+        "backend": "full-s41",
+        "p50_ms": 17.577104037627578,
+        "p95_ms": 29.213941679336127
+      },
+      "diagnostic-benchmark-laya-1": {
+        "backend": "laya",
+        "p50_ms": 17.338395526167005,
+        "p95_ms": 23.724149633198977
+      },
+      "diagnostic-benchmark-laya-2": {
+        "backend": "laya",
+        "p50_ms": 17.392520501744002,
+        "p95_ms": 23.983598331687972
+      }
+    },
+    "scope": "20 dev requests x3 shuffled passes, warm static option cache; query never cached. 2 process repeats. High primary variance; no universal parity."
+  },
+  "gpu_lease_estimate_usd": 0.32084746590256696,
+  "not_invoice": true
+}

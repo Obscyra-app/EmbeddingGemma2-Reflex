@@ -1,0 +1,24 @@
+{
+  "project": "EmbeddingGemma2-Reflex",
+  "model_repo": "Nurymanau/EmbeddingGemma2-Reflex",
+  "model_revision": "17cfbac9be0f36f051da598a4c7a045e8f249aba",
+  "model_version": "v0.2.0",
+  "public_scope": "runtime, documentation, aggregate results and pinned weight downloader; no private training corpus or private repository history",
+  "copied_from_public_release": [
+    "LICENSE",
+    "NOTICE",
+    "README.md",
+    "reflex.py",
+    "requirements-mac.txt",
+    "requirements-reference.txt",
+    "results.json",
+    "swift-runtime/LICENSE-MIT",
+    "swift-runtime/Package.resolved",
+    "swift-runtime/Package.swift",
+    "swift-runtime/Sources/ReflexCLI/Main.swift",
+    "swift-runtime/Sources/ReflexCLI/Model.swift",
+    "swift-runtime/Sources/ReflexCLI/Quantization.swift",
+    "v7/README.md",
+    "v7/results.json"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "project": "EmbeddingGemma2-Reflex",
+  "version": "v0.2.0",
+  "files": {
+    ".gitignore": {
+      "bytes": 85,
+      "sha256": "c579bba6942d85efded6b627e0821d69b31b89d1c54062f18cea86a4a4e2ac1d"
+    },
+    "LICENSE": {
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "MODEL_MANIFEST.json": {
+      "bytes": 6240,
+      "sha256": "dc12ea867c01c3862f348f29088badc95a0b6dbdff23795e304022c15679739b"
+    },
+    "NOTICE": {
+      "bytes": 1046,
+      "sha256": "890a94369d8bbb7eb07569a27ec8f506bfc7879407f58c962708790dbf57688d"
+    },
+    "PROVENANCE.json": {
+      "bytes": 828,
+      "sha256": "64cbb2bd26dcd26ad13e2cb072b6d05155caac2e913c23567adcb11870a668bc"
+    },
+    "README.md": {
+      "bytes": 7810,
+      "sha256": "9e3073e08258bc956c103db6d58714c6ae61f2e6e3c78b2c4ee942354d0cac5a"
+    },
+    "download_weights.py": {
+      "bytes": 1116,
+      "sha256": "600d57940eebe1bbdee9da60a5c41a932e96bf5c96f600c53a98d2c3cda9dc38"
+    },
+    "reflex.py": {
+      "bytes": 5164,
+      "sha256": "b4ea72f9c0a52e30279fe130ee405bd375645b855b61e39d295dc613ee8e43b0"
+    },
+    "requirements-mac.txt": {
+      "bytes": 13,
+      "sha256": "5c12d85e7c08038d1dd9ffbf8119d12ce808885230a47e2bf65dcd9f114659d5"
+    },
+    "requirements-reference.txt": {
+      "bytes": 67,
+      "sha256": "295d0f52c96aeb7cdf7eb2239e158c4016c8122c69b83836eb54e7e702181cc5"
+    },
+    "results.json": {
+      "bytes": 7432,
+      "sha256": "71c30214f12a21ab75779a79d1d5ca54313007a2bc7c7acaf3407f45aada7316"
+    },
+    "swift-runtime/LICENSE-MIT": {
+      "bytes": 1089,
+      "sha256": "23d012d80ed24321510f95b75ed4ab6d3721685575aaaafaa553d28813c514be"
+    },
+    "swift-runtime/Package.resolved": {
+      "bytes": 2838,
+      "sha256": "7393a997c7e555639b1354ec32f9fff19560ea8979489d1f6b5709753dec42f0"
+    },
+    "swift-runtime/Package.swift": {
+      "bytes": 665,
+      "sha256": "db099e953d1d0a75df70ea68ce1eb40726addd568d29cf9de4c3dc0e78a2705c"
+    },
+    "swift-runtime/Sources/ReflexCLI/Main.swift": {
+      "bytes": 2739,
+      "sha256": "f998e7f91c9925df21a21409fce3d3c823ce5840e55f32ec7da5605f49f00efa"
+    },
+    "swift-runtime/Sources/ReflexCLI/Model.swift": {
+      "bytes": 12438,
+      "sha256": "0db8d1f14c91403ca987da417d68b43dca86b62a2a2b17a8c0b4b193a5ade748"
+    },
+    "swift-runtime/Sources/ReflexCLI/Quantization.swift": {
+      "bytes": 3515,
+      "sha256": "2a6e1127b8ee0649db321f2558661f37d0a84a765210afce38117cd2a8da0bc0"
+    },
+    "v7/README.md": {
+      "bytes": 2957,
+      "sha256": "6b1048f9f55e2dd47a45ae274014a3fea9edd868aab7e8bbdc4f3c5091be300f"
+    },
+    "v7/results.json": {
+      "bytes": 6210,
+      "sha256": "4402630c8533ed42af13ad34f05e0ff3057cfa442679d63c7335ae8d8147326f"
+    }
+  }
+}

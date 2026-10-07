@@ -1,0 +1,20 @@
+EmbeddingGemma2-Reflex — research derivative, v0.1.0
+
+Base model: Google DeepMind, google/embeddinggemma-2, Apache-2.0.
+Source revision:914f7f89142e33e77833254d9c9b90c3cef7303b.
+https://huggingface.co/google/embeddinggemma-2
+
+Modifications: full fine-tuning of the 271,002,624-parameter text encoder,
+new 238,017-parameter decision head, BF16 export and MLX affine 8-bit quantization.
+Vision/audio weights are not included; their alignment is not claimed.
+This is an independent experiment, not an official Google or Laya release.
+
+Runtime uses public Transformers (Apache-2.0), MLX Swift (MIT),
+swift-transformers (Apache-2.0), and EmbeddingGemma2Swift (MIT).
+Dependency licenses remain applicable. No upstream endorsement is implied.
+
+The included Swift text runtime derives from EmbeddingGemma2Swift (MIT).
+See swift-runtime/LICENSE-MIT. It includes the compiled inference modification.
+
+Version 0.2.0 addendum: separate V7 semantic-repair heads, trained with the
+V6 text encoders frozen. Original V6 weights and entry points are preserved.

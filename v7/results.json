@@ -1,0 +1,225 @@
+{
+  "tests": {
+    "raw": {
+      "accuracy": 0.6057176891006552,
+      "correct": 1017,
+      "n": 1679,
+      "p50_ms": 43.670334038324654,
+      "groups": {
+        "semantic-ui": 0.9607843137254902,
+        "novel-combinations": 0.5234375,
+        "known": 0.5234375,
+        "both-novel": 0.4296875,
+        "novel-values": 0.4765625,
+        "semantic-topic": 1.0
+      },
+      "transfer": 0.4765625,
+      "permutation_flips": 0
+    },
+    "v6-s41": {
+      "accuracy": 0.8755211435378202,
+      "correct": 1470,
+      "n": 1679,
+      "p50_ms": 48.010375001467764,
+      "groups": {
+        "semantic-ui": 0.9176470588235294,
+        "novel-combinations": 0.8203125,
+        "known": 0.8854166666666666,
+        "both-novel": 0.859375,
+        "novel-values": 0.8385416666666666,
+        "semantic-topic": 1.0
+      },
+      "transfer": 0.8394097222222222,
+      "permutation_flips": 0
+    },
+    "v7-s41": {
+      "accuracy": 0.8874329958308517,
+      "correct": 1490,
+      "n": 1679,
+      "p50_ms": 41.15774994716048,
+      "groups": {
+        "semantic-ui": 0.996078431372549,
+        "novel-combinations": 0.82421875,
+        "known": 0.8854166666666666,
+        "both-novel": 0.85546875,
+        "novel-values": 0.8385416666666666,
+        "semantic-topic": 1.0
+      },
+      "transfer": 0.8394097222222222,
+      "permutation_flips": 0
+    },
+    "v7-s17": {
+      "accuracy": 0.9648600357355569,
+      "correct": 1620,
+      "n": 1679,
+      "p50_ms": 44.494208064861596,
+      "groups": {
+        "semantic-ui": 0.996078431372549,
+        "novel-combinations": 0.97265625,
+        "known": 0.96875,
+        "both-novel": 0.95703125,
+        "novel-values": 0.9270833333333334,
+        "semantic-topic": 1.0
+      },
+      "transfer": 0.9522569444444445,
+      "permutation_flips": 0
+    },
+    "v6-s17": {
+      "accuracy": 0.9571173317450864,
+      "correct": 1607,
+      "n": 1679,
+      "p50_ms": 37.82608301844448,
+      "groups": {
+        "semantic-ui": 0.9529411764705882,
+        "novel-combinations": 0.9609375,
+        "known": 0.9661458333333334,
+        "both-novel": 0.95703125,
+        "novel-values": 0.9322916666666666,
+        "semantic-topic": 1.0
+      },
+      "transfer": 0.9500868055555555,
+      "permutation_flips": 0
+    }
+  },
+  "old_ui": {
+    "raw": {
+      "accuracy": 0.9921875,
+      "correct": 127,
+      "n": 128,
+      "p50_ms": 80.73527045780793
+    },
+    "v7-s17": {
+      "accuracy": 1.0,
+      "correct": 128,
+      "n": 128,
+      "p50_ms": 43.7251454568468
+    },
+    "v7-s41": {
+      "accuracy": 0.96875,
+      "correct": 124,
+      "n": 128,
+      "p50_ms": 42.07377054262906
+    }
+  },
+  "legacy": {
+    "v7-s17": {
+      "accuracy": 1.0,
+      "correct": 127,
+      "n": 127,
+      "p50_ms": 47.17116698157042
+    },
+    "v7-s41": {
+      "accuracy": 0.9763779527559056,
+      "correct": 124,
+      "n": 127,
+      "p50_ms": 31.22241608798504
+    }
+  },
+  "gate": {
+    "17": {
+      "transfer": true,
+      "ui": true,
+      "topic": true,
+      "old_ui": true,
+      "legacy": true
+    },
+    "41": {
+      "transfer": true,
+      "ui": true,
+      "topic": true,
+      "old_ui": false,
+      "legacy": false
+    }
+  },
+  "repair_pass": false,
+  "benchmarks": {
+    "benchmark-v7-s17-1": {
+      "tag": "v7-s17",
+      "repeat": 1,
+      "p50_ms": 31.529291998595,
+      "p95_ms": 166.64068931131624,
+      "scope": "20 dev cases x3 shuffled passes, static option cache, fresh query, no answer cache. Reference is installed Laya MLX, not audited Torch parity."
+    },
+    "benchmark-v7-s17-2": {
+      "tag": "v7-s17",
+      "repeat": 2,
+      "p50_ms": 25.104895932599902,
+      "p95_ms": 42.90634721401147,
+      "scope": "20 dev cases x3 shuffled passes, static option cache, fresh query, no answer cache. Reference is installed Laya MLX, not audited Torch parity."
+    },
+    "benchmark-v7-s41-1": {
+      "tag": "v7-s41",
+      "repeat": 1,
+      "p50_ms": 17.94045843416825,
+      "p95_ms": 32.401835394557565,
+      "scope": "20 dev cases x3 shuffled passes, static option cache, fresh query, no answer cache. Reference is installed Laya MLX, not audited Torch parity."
+    },
+    "benchmark-v7-s41-2": {
+      "tag": "v7-s41",
+      "repeat": 2,
+      "p50_ms": 19.4286874611862,
+      "p95_ms": 32.9476055689156,
+      "scope": "20 dev cases x3 shuffled passes, static option cache, fresh query, no answer cache. Reference is installed Laya MLX, not audited Torch parity."
+    },
+    "benchmark-laya-1": {
+      "tag": "laya",
+      "repeat": 1,
+      "p50_ms": 19.454833469353616,
+      "p95_ms": 28.532116039423272,
+      "scope": "20 dev cases x3 shuffled passes, static option cache, fresh query, no answer cache. Reference is installed Laya MLX, not audited Torch parity."
+    },
+    "benchmark-laya-2": {
+      "tag": "laya",
+      "repeat": 2,
+      "p50_ms": 21.11887448700145,
+      "p95_ms": 32.719947944860905,
+      "scope": "20 dev cases x3 shuffled passes, static option cache, fresh query, no answer cache. Reference is installed Laya MLX, not audited Torch parity."
+    }
+  },
+  "latency_ratios": {
+    "17": [
+      1.620640549211679,
+      1.1887421343429938
+    ],
+    "41": [
+      0.9221594449743865,
+      0.9199679402017589
+    ]
+  },
+  "latency_10percent_gate": false,
+  "verified_answers": 9033,
+  "primary_seed": 41,
+  "protocol_sha256": "1965c5170a30d4749d9ff190a88e48ee96788c608f48108f7cad4b2bab8b6c7f",
+  "cloud_cost_usd": 0,
+  "test_latency_note": "Accuracy loop partly overlapped release downloads; do not use its wall times as an isolated benchmark.",
+  "head_equivalence": {
+    "status": "pass",
+    "models": {
+      "17": {
+        "maxabs": 2.349274396351575e-06,
+        "flips": 0,
+        "dev_rows": 698
+      },
+      "41": {
+        "maxabs": 2.334242566348621e-06,
+        "flips": 0,
+        "dev_rows": 698
+      }
+    }
+  },
+  "version": "v0.2.0",
+  "training": {
+    "train_rows": 6472,
+    "dev_rows": 698,
+    "new_test_rows": 1679,
+    "epochs": 15,
+    "batch": 64,
+    "head_lr": 0.0002,
+    "encoder_frozen": true,
+    "loss": "CE + 0.1 Brier + 8 rule KL to V6 + 0.5 semantic KL to original; semantic mass 0.7",
+    "selected_epochs": {
+      "17": 14,
+      "41": 4
+    }
+  }
+}
